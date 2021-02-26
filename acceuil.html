@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Leila Restaurant - Page d'acceuil</title>
+    <link rel="stylesheet" href="css/leila.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,400i,700" rel="stylesheet">
+</head>
+<body>
+    <header class="page-accueil">
+        <div class="barre-haut">
+        </div>
+        <div class="left">
+            <a href="https://twitter.com/?lang=en" target="_blank" class="pastille icone">&#xe900;</a>
+            <a href="https://www.facebook.com/" target="_blank" class="pastille icone">&#xe901;</a>
+        </div>
+        <div class="right">
+            <a href="#" class="pastille">En</a>
+            <a href="#" class="pastille selected" >Fr</a>
+        </div>
+        <div class="logo">
+            <h1 class="logo-leila">Leila</h1>
+            <h2 class="Restaurant">Restaurant</h2>
+        </div>
+            
+        <img src="images-et-polices-de-caracteres/images/couteau.png" alt="" class="img-couteau">
+        <h3 class="ouverture">Ouvert aujourd’hui à partir de 11 h</h3>
+        <p>275 rue Notre-Dame Est Montréal, Québec</p>
+        <p class="bold">(514) 872-0311</p>
+        <div class="menu-vins-reserv">
+            <a href="menu.html"> <div class="sprite sprite-icone-menu-blanc"></div></a>
+            <a href="vins.html"> <div class=" sprite sprite-icone-vins-blanc"></div></a>
+            <a href="#"> <div class=" sprite sprite-icone-reservation-blanc"></div></a>
+        </div>
+    </header>
+
+    <section class="section-body">
+        <h2 class="cuisine">Cuisine créative de saison</h2>
+        <video src="media/video-en-cuisine.mp4" controls poster="images-et-polices-de-caracteres/images/video.jpg"></video>
+        <p class="long-para">Cette maison feutrée située à deux pas du Centre des sciences de Montréal offre un charme indéniable. Sa déco coloniale et son cadre chic lui confèrent une atmosphère cosy et feutrée particulièrement appréciée d’une clientèle exigeante. Assisté en salle de son charmant partenaire Léandre, Clémentine Matuvu propose une cuisine très personnelle.</p>
+        <p>Cheffe d’une insatiable curiosité, elle revisite ses classiques avec talent et n’hésite pas à sortir des sentiers battus tout en respectant les saisons et leurs produits avec le marché comme source d’inspiration. </p>
+        <p>Un immeuble parmi les plus anciens de la ville dans... la rue Neuve, cela ne s'invente pas ! La cheffe, passionnée par son métier et le vins, joue à fond la carte de la "bistronomie", en misant sur des produits du marché de très belle </p>
+    </section>
+    
+    <footer>
+        <section class="section-footer">
+            <h2 class="contact">Contactez-nous</h2>
+            <form>
+                    <label class="colonne">
+                        Nom
+                        <input type="text" name="nom">
+                    </label>
+                    <label class="colonne">
+                        Adresse de courriel
+                        <input type="text" name="courriel">
+                    </label>
+                    <label class="colonne long-text">
+                        Votre message
+                        <textarea cols="30" rows="10"></textarea>
+                    </label>
+                    <input type="submit" value="Envoyer">
+            </form>
+            <table class="heure-ouverture">
+
+                <caption>
+                    Heures d’ouverture
+                </caption>
+    
+                <tbody>
+                    <tr class="no-top-border">
+                        <th>Lundi</th>
+                        <td>fermé</td>
+                    </tr>
+                    <tr>
+                        <th>Mardi</th>
+                        <td>fermé</td>
+                    </tr>
+                    <tr>
+                        <th>Mercredi</th>
+                        <td>11 h à 23 h</td>
+                    </tr>
+                    <tr>
+                        <th>Jeudi</th>
+                        <td>11 h à 23 h</td>
+                    </tr>
+                    <tr>
+                        <th>Vendredi</th>
+                        <td>11 h à 1 h</td>
+                    </tr>
+                    <tr>
+                        <th>Samedi</th>
+                        <td>18 h à 1 h</td>
+                    </tr>
+                    <tr>
+                        <th>Dimanche</th>
+                        <td>18 h à 23 h</td>
+                    </tr>
+                </tbody>
+            </table>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.0575961459936!2d-73.5565211840673!3d45.
+            508919179101454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a54035c0dcb%3A0xbb39ebddff5d483!2sMontreal
+            +City+Hall!5e0!3m2!1sen!2sca!4v1544494390059" 
+            width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <p class="address">275, rue Notre-Dame est, Montréal, Québec <span class="numéro">(514) 872-0311</span></p>
+        </section>
+    </footer>
+</body>
+</html>

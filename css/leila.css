@@ -1,0 +1,620 @@
+/*************************************** Fonts ******************************************/
+@font-face {
+    font-family: 'Ribbon';
+    src: url(../images-et-polices-de-caracteres/fonts/Ribbon_V2_2011.woff2);
+}
+
+@font-face {
+    font-family: 'Icones';
+    src: url(../images-et-polices-de-caracteres/fonts/icones.woff);
+}
+
+  /*************************************** Box-sizing ******************************************/
+*, :after, :before {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/*************************************** background images ******************************************/
+.page-accueil {
+    background-image: url(../images-et-polices-de-caracteres/images/accueil-entete.jpg);
+    height: 700px;  
+    background-size: cover;
+    color: white;
+    background-repeat: no-repeat;
+}
+
+.page-menu {
+    background-image: url(../images-et-polices-de-caracteres/images/menu-entete.jpg);
+    height: 300px;
+    background-size: cover;
+}
+
+.page-vins {
+    background-image: url(../images-et-polices-de-caracteres/images/vins-entete.jpg);
+    height: 300px;  
+    color: white;
+    background-size: cover;
+}
+
+/*************************************** Règles générales******************************************/
+html {
+    margin: 0 auto;
+    padding: 0;
+    width:  1268px;
+    margin: 30px auto;
+    font-family: 'Roboto', sans-serif;
+    /* border: red 1px solid; */
+    box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.5);
+    background-color: #282828;
+}
+
+header p {
+    font-size: 20px;
+    /* margin: 10px 0px; */
+}
+
+header p.bold {
+    font-weight: 700;
+}
+
+body {
+    text-align: center;
+    margin: 0;
+    background-color: white;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+    
+}
+
+a.selected {
+    background-color: #848485;
+}
+
+div.left {
+    float:  left;
+    padding-left: 175px;
+    position: relative;
+    bottom: 45px;
+}
+
+div.right {
+    float:  right;
+    padding-right: 175px;
+    position: relative;
+    bottom: 45px;
+}
+
+a:hover,
+a h4:hover  {
+    color:  #fed531;
+}
+
+.pastille {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    background-color: #ffffff;
+    color: #4d4d4d;
+    font-weight: bold;
+    line-height: 34px;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-left: 0px;
+
+
+}
+
+.pastille:hover {
+    background-color: #848485;
+    color:#ffffff;
+}
+
+.barre-haut {
+    height: 50px;
+    background-color: black;
+    opacity: 0.75;
+
+}
+
+.icone {
+    font-family:'Icones'
+}
+
+div.menu-vins-reserv{
+    margin: 45px auto;
+}
+
+div.menu-vins-reserv a{
+    padding-left:45px;
+}
+
+
+  /*************************************** Titres (h1,h2,h3....)******************************************/
+
+h1.logo-leila {
+    display: inline-block;
+    margin: 0;
+    font-family:'Ribbon', cursive;
+    font-size: 100px ;
+    font-weight: 100;
+    color: #ffffff;
+    letter-spacing: 15px;
+}
+
+h1.logo-menu,
+h1.logo-vins {
+    display: inline-block;
+    line-height: 1;
+    margin:0;
+    vertical-align: middle;
+    font-family:'Ribbon', cursive;
+    font-size: 125px ;
+    font-weight: 100;
+    color: #ffffff;
+    letter-spacing: 30px;
+}
+
+h2.Restaurant {
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    font-size: 40px;
+    position: relative;
+    top: -20px;
+    font-weight: 600;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+h2.entrées {
+    margin-bottom: 25px;
+}
+
+h2.menu-titre{
+    margin-top: 80px;
+    margin-bottom: 0px;
+}
+    
+h2 code {
+    font-family: 'Roboto Slab', serif;
+    /* margin-top: 10px; */
+    padding-bottom: 0px;
+    font-size: 28px;
+    font-weight: 700;
+    position: relative;
+    top: 20px;
+    margin-top: 100px;
+}
+
+h2.uppercase {
+    text-transform: uppercase;
+}
+
+h2.cuisine {
+    text-align: left;
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.11rem;
+    font-weight: 400;
+    margin: 0px;
+    margin: 60px 0px;
+}
+.img-couteau {
+    position: relative;
+    top: -20px;
+    margin: 0;
+}
+
+h3.ouverture {
+    color: #fed531;
+    font-size: 35px;
+    font-weight: 700;
+    margin: 0;
+}
+
+h4 {
+    color: white;
+    margin:auto;
+    font-family: 'Ribbon', cursive;
+    font-size: 1.67em;
+    position: relative;
+    top: -45px;
+    width: 100px;
+    
+}
+
+/*************************************** Feuille de sprite ******************************************/
+
+.sprite {
+    background-image: url(../feuille-de-sprites-nav-principale/nav-feuille-de-sprite.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    border: none;
+}
+.sprite-icone-menu-blanc {
+    width: 128px;
+    height: 128px;
+    background-position: -5px -5px;
+}
+
+.sprite-icone-menu-gris {
+    width: 128px;
+    height: 128px;
+    background-position: -143px -5px;
+}
+
+.sprite-icone-menu-blanc:hover,
+.sprite-icone-menu-gris:hover,
+.sprite-icone-menu-jaune{
+    width: 128px;
+    height: 128px;
+    background-position: -281px -5px;
+}
+
+.sprite-icone-reservation-blanc {
+    width: 128px;
+    height: 128px;
+    background-position: -5px -143px;
+}
+
+.sprite-icone-reservation-gris {
+    width: 128px;
+    height: 128px;
+    background-position: -143px -143px;
+}
+
+.sprite-icone-reservation-blanc:hover,
+.sprite-icone-reservation-gris:hover{
+    width: 128px;
+    height: 128px;
+    background-position: -281px -143px;
+}
+
+.sprite-icone-vins-blanc {
+    width: 128px;
+    height: 128px;
+    background-position: -5px -281px;
+}
+
+.sprite-icone-vins-gris {
+    width: 128px;
+    height: 128px;
+    background-position: -143px -281px;
+}
+
+.sprite-icone-vins-blanc:hover,
+.sprite-icone-vins-gris:hover,
+.sprite-icone-vins-jaune {
+    width: 128px;
+    height: 128px;
+    background-position: -281px -281px;
+}
+
+/*************************************** Contenu principal ******************************************/
+.section-body {
+    width: 80%;
+    background-color: white;
+    color: #444444;
+    margin: 0 auto;
+    text-align: left;
+}
+
+video {
+    float: left;
+    width: 500px;
+    margin-top: 20px;
+    padding-right: 10px;
+    position: relative;
+    top: -40px;
+}
+video[poster] {
+    background-size: cover; 
+}
+
+.section-body p {
+    font-size: 18px;
+    padding: 15px;
+}
+
+/*************************************** Footer ******************************************/
+footer {
+    background-color: #5f5f5f;
+}
+
+footer .section-footer {
+    width: 80%;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer h2.contact {
+    text-align: left;
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.11rem;
+    font-weight: 400;
+    color: #b8b8b8;
+    padding: 70px 0px;
+    margin: 0;
+}
+/*************************************** Formulaire ******************************************/
+form {
+    float: left;
+    width: 50%;
+}
+
+label {
+    display: block;
+    font-size: 16px; 
+}
+
+.colonne {
+    margin: 0;
+    display: block;
+    width: 30%;
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+input[type="text"] {
+    width: 450px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    outline: none;
+}
+
+input.carré-recherche[type="text"] {
+    width: 70%;
+    height: 50px;
+    border: 1px solid #cccccc;
+    margin: auto 0 auto 50px;
+    font-size: 20px;
+    
+}
+
+input[type="submit"] {
+    border-radius: 5px;
+    color: #594909;
+    background-color: #ddb207;
+    height: 45px;
+    width: 175px;
+    border: none;
+    font-family: Roboto Slab;
+    font-weight: 700;
+    font-size: 20px;
+    float: left;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #a5860b;
+}
+
+textarea {
+    height: 150px;
+    width: 450px;
+    resize: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+/*************************************** Tableau ******************************************/
+table {
+    float: right;
+    text-align: left;
+    /* position: relative;
+    top: -25px; */
+}
+
+caption {
+    font-family: Roboto Slab;
+    font-size: 28px;
+    Border-bottom-style: solid ;
+    border-color: #a8a8a8;
+    position: relative;
+    top: 4px;
+    text-align: left;
+}
+
+tbody tr.no-top-border {
+    border-top: none;
+}
+
+tbody tr {
+    display: block;
+    border-top-style: solid;
+    border-color: #7c7c7c;
+    border-width: 5px;
+    height:40px;
+    width: 400px; 
+}
+
+tbody tr th {
+    line-height: 40px;
+    font-weight: 400;
+}
+
+tbody tr td {
+    float:right;
+    line-height: 0px;
+    position: relative;
+    bottom: 25px;
+}
+
+footer table.heure-ouverture tr {
+	border-top: 1px solid #7c7c7c;
+}
+
+/*************************************** Adress footer ******************************************/
+iframe {
+    padding-top: 80px;
+
+}
+
+footer section p.address {
+    font-size: 26px;
+    padding-bottom: 70px;
+    margin-bottom: 0px;
+}
+
+.numéro {
+    padding-left: 10px;
+    font-weight: 700;
+}
+
+/*************************************** Page Menu et Vin ********************************************************************/
+
+/*************************************** images + citations ******************************************/
+.image-menu {
+    float: left;
+    border-right-style: solid;
+    border-color: #bdbdbd;
+    border-width: 2px;
+    position: relative;
+    top: -25px;
+}
+
+.citation {
+    float: right;
+}
+
+body div div {
+    border-top:1px solid #bdbdbd;
+    border-bottom: 1px solid #bdbdbd;
+    border-width: 2px;
+    padding: 60px 0px;
+    text-align: left;
+    font-style: italic;
+    font-size: 26px;
+    color: #444444;
+    
+}
+
+.signature {
+    padding-top: 15px;
+    font-size: 18px;
+    color: #8a8a8a;
+}
+
+body section.section-menu p,
+body section.section-menu-vins p {
+    padding-left: 220px;
+    margin: 0;
+}
+/*************************************** barre de recherche (Vin) ******************************************/
+div .barre-de-recherche {
+    border:none;
+    background-color: #efefef;
+    font-family: Roboto Slab;
+    font-size: 28px;
+    font-weight: 700;
+    font-style: normal;
+    padding-left: 75px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 50px auto;
+}
+
+/*************************************** Contenu principal ******************************************/
+
+body section.section-menu {
+    width: 80%;
+    margin: 0 auto 250px auto;
+}
+
+body section.section-menu-vins {
+    width: 80%;
+    margin: 0 auto 75px auto;
+}
+
+
+.menu-vins-titre {
+    position: relative;
+    top: 10px;
+    font-family: Roboto;
+    font-size: 18px;
+    color: #444444;
+    list-style-type: none;
+}
+
+
+/*************************************** Dotted leader ******************************************/  
+
+.is-no-padding {
+    padding: 0;
+}
+
+.is-no-margin {
+    margin: 0;
+}
+
+.dot-leader {
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.dot-leader__left {
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    font-style: italic;
+    color: #939393;
+}
+
+.exception {
+    font-size: 18px;
+    font-style: normal;
+    color: #444444;
+}
+
+.droit {
+font-style: normal;
+}
+
+.dot-leader__left-vins {
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    font-style: italic;
+    color: #939393;
+    padding-left: 30px;
+}
+
+.dot-leader__left::after,
+.dot-leader__left-vins::after {
+    color: gray;
+    content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
+    font-weight: normal;
+    display: inline-block;
+    position: absolute;
+    white-space: nowrap;
+    margin-left: 5px;
+    font-size: 16px;
+}
+
+.dot-leader__right {
+    background: white;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    padding-left: 5px; 
+    font-size: 18px;
+}
+
+section h2,
+section ul {
+    text-align: left;
+}
+
+section li {
+    padding-top: 15px;
+}
+
+.pour2pers {
+    font-size: 16px;
+    color: #939393;
+    font-style: italic;
+}

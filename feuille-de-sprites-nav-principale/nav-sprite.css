@@ -1,0 +1,66 @@
+/*
+Utilisez au besoin les règles CSS suivantes dans votre feuille de style 
+du site web pour formater le menu de navigation.
+Copiez et adaptez les règles adéquatement avant de les inclure dans 
+votre feuille de style.
+*/
+.sprite {
+	/* N'oubliez pas d'ajustez l'URL selon l'emplacement de l'image */
+    background-image: url(nav-feuille-de-sprite.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-icone-menu-blanc {
+    width: 128px;
+    height: 128px;
+    background-position: -5px -5px;
+}
+
+.sprite-icone-menu-gris {
+    width: 128px;
+    height: 128px;
+    background-position: -143px -5px;
+}
+
+.sprite-icone-menu-jaune {
+    width: 128px;
+    height: 128px;
+    background-position: -281px -5px;
+}
+
+.sprite-icone-reservation-blanc {
+    width: 128px;
+    height: 128px;
+    background-position: -5px -143px;
+}
+
+.sprite-icone-reservation-gris {
+    width: 128px;
+    height: 128px;
+    background-position: -143px -143px;
+}
+
+.sprite-icone-reservation-jaune {
+    width: 128px;
+    height: 128px;
+    background-position: -281px -143px;
+}
+
+.sprite-icone-vins-blanc {
+    width: 128px;
+    height: 128px;
+    background-position: -5px -281px;
+}
+
+.sprite-icone-vins-gris {
+    width: 128px;
+    height: 128px;
+    background-position: -143px -281px;
+}
+
+.sprite-icone-vins-jaune {
+    width: 128px;
+    height: 128px;
+    background-position: -281px -281px;
+}
